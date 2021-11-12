@@ -175,7 +175,7 @@ Video Cheacking....
 xxx = '''
 Video Extract.....
 '''
-@javes.on_cmd(pattern=".tmkoc")
+@javes.on(admin_cmd(pattern=r"tmkoc?(.*)"))
 async def _(event):
  await event.edit("**Uploading Started.....**") 
  await asyncio.sleep(4)
